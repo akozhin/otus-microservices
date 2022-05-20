@@ -26,6 +26,13 @@ spec:
               path: /health/liveness
               port: 8080
             initialDelaySeconds: 10
+          volumeMounts:
+            - mountPath: "/app"
+              name: cfg
+      volumes:
+        - name: cfg
+          configMap:
+            name: user-app-cfg
       restartPolicy: Always
   selector:
     matchLabels:
