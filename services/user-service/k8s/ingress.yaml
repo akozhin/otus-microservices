@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: user-app
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /health
+#    nginx.ingress.kubernetes.io/rewrite-target: /health
 spec:
   rules:
     - host: arch.homework
@@ -16,10 +16,10 @@ spec:
                 name: user-app
                 port:
                   number: 8000
-          - path: /otusapp/akozhin(/|$)(.*)
-            pathType: Prefix
-            backend:
-              service:
-                name: user-app
-                port:
-                  number: 8000
+#          - path: /otusapp/akozhin(/|$)(.*)
+#            pathType: Prefix
+#            backend:
+#              service:
+#                name: user-app
+#                port:
+#                  number: 8000
