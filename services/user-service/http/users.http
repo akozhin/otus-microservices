@@ -1,0 +1,32 @@
+http://127.0.0.1:8080/user
+
+###
+http://127.0.0.1:8080/user/628e8196a6ba5e4df2eee428
+
+###
+DELETE http://127.0.0.1:8080/user/628e8196a6ba5e4df2eee428
+
+###
+POST http://127.0.0.1:8080/user
+Content-Type: application/json
+
+{
+  "username": "johndoe589",
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "bestjohn@doe.com",
+  "phone": "+71002003040"
+}
+
+###
+PUT http://127.0.0.1:8080/user
+Content-Type: application/json
+
+{
+  "id": "628ce7025166980811ddf739",
+  "username": "akozhin",
+  "firstName": "Alexandr",
+  "lastName": "Kozhin",
+  "email": "kozhin@iac.spb.ru",
+  "phone": "+71002003040"
+}
