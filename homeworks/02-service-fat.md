@@ -22,3 +22,15 @@
 - Шаблонизация приложения в helm чартах
 
 ## Результат
+
+Установка приложения с использованием `helm`
+```bash
+cd services/user-service/helm
+helm upgrade --install otus-hw2-akozhin otus-user-app
+```
+
+Один пользователь создается при старте приложения.
+
+Доступен один допольнительный метод `/user`, который возвращает список пользователей.
+
+Экспортированная Postman коллекция `http/otus-microservices-akozhin.postman_collection.json`
