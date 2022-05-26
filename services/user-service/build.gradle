@@ -1,12 +1,27 @@
 plugins {
+    id 'java'
     id 'org.springframework.boot' version '2.6.7'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-    id 'java'
+    id 'com.gorylenko.gradle-git-properties' version '2.3.2'
 }
 
 group = 'dev.akozhin.otus.microservices'
-version = '0.1.0-SNAPSHOT'
-sourceCompatibility = '17'
+version = '0.1.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion  = JavaLanguageVersion.of(17)
+    }
+}
+springBoot {
+    buildInfo {
+        properties {
+            additionalProperties = [
+                    'Description': 'Simple user CRUD application of microservices course by otus'
+            ]
+        }
+    }
+}
 
 repositories {
     mavenCentral()

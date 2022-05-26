@@ -1,4 +1,4 @@
-http://127.0.0.1:8080/user
+http://arch.homework/user
 
 ###
 http://127.0.0.1:8080/user/628e8196a6ba5e4df2eee428
@@ -7,7 +7,7 @@ http://127.0.0.1:8080/user/628e8196a6ba5e4df2eee428
 DELETE http://127.0.0.1:8080/user/628e8196a6ba5e4df2eee428
 
 ###
-POST http://127.0.0.1:8080/user
+POST http://arch.homework/fuser
 Content-Type: application/json
 
 {

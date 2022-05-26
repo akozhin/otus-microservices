@@ -18,8 +18,12 @@ data:
           authentication-database: admin
     management:
       endpoint:
+        health:
+          show-details: always
+          enabled: true
         info:
           enabled: true
-        health:
-          probes:
-            enabled: true
+      endpoints:
+        web:
+          exposure:
+            include: '*'
